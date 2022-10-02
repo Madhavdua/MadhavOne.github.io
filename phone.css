@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hide{
+    opacity: 0;
+}
+body{
+    /* background-color: aquamarine; */
+    border: 3vw solid rgb(122, 217, 247);
+    /* border-bottom: 0ch; */
+}
+nav{
+    min-height: 50px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+}
+#menu{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bar{
+    margin: 1px 5px;
+    border-radius: 2px;
+    width: 15px;
+    height: 3px;
+    background-color: black;
+    transition: 1s ease;
+}
+
+.opened #bar1{
+transform: translateY(5px) rotate(-45deg);
+
+}
+.opened #bar2{
+    opacity: 0;  
+}
+.opened #bar3{
+transform: translateY(-5px) rotate(45deg);
+}
+.navitems{
+    display: none;
+}
+.change{
+    height: auto;
+    position: relative;
+    margin: 20px;
+    padding-left: 50px;
+    padding-right: auto;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease;
+    /* align-items: center; */
+
+}
+.change > p{
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+
+    text-decoration: none;
+    text-align: center;
+}
+.change > p > a{
+    text-decoration: none;
+}
+
+/* Now main page start */
+.complete{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    min-height: 75vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main > .left{
+display: flex;
+flex-direction: column;
+width: 90%;
+align-items: center;
+margin-bottom: 40px;
+
+}
+.main > .right{
+width: 90%;
+height: auto;
+padding-left: 9%;
+}
+.main > .right > img{
+    display: inline;
+    width: 87%;
+    height: auto;
+    /* height: 100%; */
+    border-radius: 29px;
+}
+.main> .left > .leftMe{
+    margin-top: 12vw;
+    height: auto;
+    font-size: 10vw;
+    font-weight: bold;
+}
+.uiux{
+    position: relative;
+    display: inline;
+    margin: 0px 42px;
+}
+.main> .left > .leftMe > .uiux > button{
+   
+    position: absolute;
+    top: 1vw;
+    margin-left: -32px;
+    background-color: aqua;
+    font-size: 12px;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 14px;
+}
+
+.left > .ideaMe {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 9vw;
+    width: 50%;
+    text-align:justify;
+    font-size: 20px;
+}
+.left > .third{
+    display: flex;
+}
+.left > .third > .hireMe> button{
+    width: 90px;
+    height: 35px;
+    background-color: rgb(250, 141, 97);
+    border: none;
+}
+.left > .third > .hireMe> button > a{
+text-decoration: none;
+color: white;
+font-weight: bold;
+}
+.left > .third > .projects{
+    margin: auto 2vw;
+    font-weight: bolder;
+}
+.left > .third > .projects>a{
+    text-decoration: none;
+    color: black;
+}
+
+/* pages start here */
+.pages{
+    display: flex;
+    flex-direction: column;
+}
+.pages > .head{
+    font-size: 28px;
+    font-family: monospace;
+    font-weight: bold;
+    margin: 20px auto 30px 50px;
+}
+.pages > .content{
+    padding: 5px 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.social{
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+}
+.social > a >img {
+    margin: 15px 10px;
+    width: 50px;
+    height: 50px;
+}
+.skillcontent{
+    display: flex;
+    flex-wrap: wrap; 
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+}
+.skillitems{
+    margin: 2px 20px;
+}
+.SkillsImg > img{
+    margin: 15px auto;
+    width: 50px;
+    height: 50px;
+}

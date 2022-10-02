@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" media="screen and (min-width: 751px)" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 750px)" href="phone.css">
+</head>
+
+<body>
+    <nav>
+        <div id="menu" onclick="burger()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+        </div>
+        <div id="ham" class="navName">
+            <a>Madhav </a>
+            <p>&#8226;</p>
+        </div>
+        <div id="navItems" class="navitems">
+            <p><a href="#home">Home</a></p>
+            <p><a href="#about">About</a></p>
+            <p><a href="#about">Skills</a></p>
+            <p><a href="#contact">Contact</a></p>
+        </div>
+
+    </nav>
+    <div id="home" class="navline">
+        <hr>
+    </div>
+    <div class="complete">
+    <div class="main">
+        <div class="left">
+            <div class="leftMe">
+                <a>Hi! I am </a>
+                <div id="ui" class="uiux">
+                    <button>UI/UX</button>
+                </div>
+                <br>
+                <a> Madhav Dua</a>
+            </div>
+            <div class="ideaMe">
+                <p>
+                    I am a IT Undergrad and a Competetive Programmer.
+                    I am learning Web development and brushing up my DS and Algo.
+                </p>
+            </div>
+            <div class="third">
+                <div class="hireMe">
+                    <button><a href="projects.html" target="blank">Hire Me</a></button>
+                </div>
+                <div class="projects">
+                    <a href="projects.html" target="blank">Projects &#8599</a>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="profile.JPG" >
+
+        </div>
+    </div>
+    <div id="about" class="pages">
+        <div class="head">
+            About
+        </div>
+        <div class="content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet numquam harum quos voluptatibus? Soluta
+                numquam repudiandae illo non perferendis ratione expedita possimus recusandae eius. Ipsam reiciendis
+                tenetur laboriosam perferendis animi nam mollitia? Rem, beatae debitis quod obcaecati a saepe expedita,
+                sed laudantium incidunt inventore eius corporis dolorem velit provident deserunt.</p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique asperiores ex aperiam odio tempore.
+                Voluptates nobis officiis aliquid aperiam repellat sint eos pariatur, debitis vitae dolorum eveniet ipsa
+                tempore ratione!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati optio beatae, excepturi cumque
+                accusantium ut recusandae voluptatibus ipsam fugiat dolores!
+            </p>
+        </div>
+    </div>
+    <div class="pages">
+        <div class="head">
+            <p>Skills</p>
+        </div>
+        <div class="content skillcontent">
+            <div id="c" class="skillitems">
+                <div class="content skill">
+                    <p>C,C++</p>
+                </div>
+                <div class="SkillsImg">
+                    <img src="c_c++.png">
+                </div>
+            </div>
+            <div id="java" class="skillitems">
+                <div class="content skill">
+                    <p>Java</p>
+                </div>
+                <div class="SkillsImg">
+                    <img src="java.png">
+                </div>
+            </div>
+            <div id="html" class="skillitems">
+                <div class="content skill">
+                    <p>HTML</p>
+                </div>
+                <div class="SkillsImg">
+                    <img src="html.png">
+                </div>
+            </div>
+            <div id="css" class="skillitems">
+                <div class="content skill">
+                    <p>CSS</p>
+                </div>
+                <div class="SkillsImg">
+                    <img src="css.png">
+                </div>
+            </div>
+            <div id="javaScript" class="skillitems">
+                <div class="content skill">
+                    <p>JavaScript</p>
+                </div>
+                <div class="SkillsImg">
+                    <img src="js.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="pages">
+        <div class="head">
+            <p>Contact</p>
+        </div>
+        <div class="content">
+            <div id="contactDivId"></div>
+            <label for="contactMe">How can i help you</label>
+            <select id="contactMeID" name="contactMename" onchange="item1(this.value)">
+                <option value="Select">Select </option>
+                <!-- options will be provided by javaScript -->
+            </select>
+            <div class="social">
+                <p>Connect:</p>
+                <a href="https://www.linkedin.com/in/madhav-dua-0831a2224" target="blank"><img src="linkd.png"></a>
+                <!-- <a href="" target="blank"><img src="fb.jfif"></a> -->
+                <a href="https://twitter.com/madhav_dua8" target="blank"><img src="twit.png"></a>
+                <a href="https://github.com/Madhavdua" target="blank"><img src="github.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+    <script>
+        for (var i = 0; i < data.length; i++) {
+            document.getElementById("contactMeID").innerHTML += `<option value="${i}">${data[i].title}</option>`;
+
+        }
+        function item1(x) {
+            document.getElementById("contactDivId").innerHTML = data[x].detail;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Ubuntu&display=swap');
+*{
+    margin: 0 0;
+    padding: 0 0;
+}
+.hide{
+    opacity: 0;
+}
+body{
+    border: 3vw solid rgb(122, 217, 247);
+    /* border-bottom: 0ch; */
+}
+nav{    
+    background-color: white;
+    margin: 20px 20px 10px;
+    display: flex;
+}
+nav > .navitems{
+    display: flex;
+    padding-top: 8px;
+    margin-right: 3vw;
+}
+nav > .navitems > p >a{
+    font-size: larger;
+    font-weight: 600;
+text-decoration: none;
+margin-left: 3vw;
+color: black;
+}
+
+.navline > hr{
+    margin: auto 15px 15px ;
+}
+nav > .navName{
+    display: flex;
+    column-gap: 10px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+nav > .navName> p{
+    color: aqua;
+    transform: scale(1.7,1.7);
+}
+.complete{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    min-height: 80vh;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.main > .left{
+display: flex;
+flex-direction: column;
+width: 60%;
+height: auto;
+}
+.main > .right{
+width: 40%;
+padding-right: 31px;
+height: auto;
+}
+.main > .right > img{
+    border-radius: 40px;
+    width: 98%;
+    height: 100%;
+}
+.main> .left > .leftMe{
+    margin-top: 12vw;
+    padding-left: 10vw;
+    height: auto;
+    font-size: 6vw;
+    font-weight: bold;
+}
+.uiux{
+    position: relative;
+    display: inline;
+    margin: 0px 42px;
+}
+.main> .left > .leftMe > .uiux > button{
+    /* text-align: center; */
+    position: absolute;
+    top: 3.5vh;
+    margin-left: -32px;
+    background-color: aqua;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 14px;
+}
+
+.left > .ideaMe {
+    margin-left: 10vw;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 50%;
+    text-align:justify;
+    font-size: 2vw;
+}
+.left > .third{
+    display: flex;
+}
+.left > .third > .hireMe> button{
+    width: 90px;
+    height: 35px;
+    margin-left: 15vw;
+    background-color: rgb(250, 141, 97);
+    border: none;
+}
+.left > .third > .hireMe> button > a{
+text-decoration: none;
+color: white;
+font-weight: bold;
+}
+.left > .third > .projects{
+    margin: auto 2vw;
+    font-weight: bolder;
+}
+.left > .third > .projects>a{
+    text-decoration: none;
+    color: black;
+}
+.pages{
+    display: flex;
+    flex-direction: column;
+}
+.pages > .head{
+    font-size: 28px;
+    font-family: monospace;
+    font-weight: bold;
+    margin: 20px auto 30px 50px;
+}
+.pages > .content{
+    padding: 5px 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.social{
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+}
+.social > a >img {
+    margin: 15px 10px;
+    width: 50px;
+    height: 50px;
+}
+.skillcontent{
+    display: flex;
+    flex-wrap: wrap; 
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+}
+.skillitems{
+    margin: 2px 20px;
+}
+.SkillsImg > img{
+    margin: 15px auto;
+    width: 50px;
+    height: 50px;
+}
+/* @media only screen and (max-width:1290px) and (min-width:1110px){
+    
+    .main > .left{
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    min-height: 90vh;
+    height: auto;
+    width: auto;
+    }
+    .main > .right{
+    width: 50%;
+    padding-right: 31px;
+    height: 90vh;
+    }
+    .main> .left > .leftMe > .uiux > button{
+    position: absolute;
+    top: 3vh;
+    margin-left: -32px;
+    background-color: aqua;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 14px;
+    }
+    .main> .left > .leftMe{
+        margin-top: 12vw;
+        padding-left: 10vw;
+        height: auto;
+        font-size: 6vw;
+        font-weight: bold;
+    }
+} */
+@media only screen and (max-width:1110px) and (min-width:960px){
+    
+    .main > .left{
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+    min-height: 90vh;
+    height: auto;
+    width: auto;
+    }
+    .main > .right{
+    width: 60%;
+    padding-right: 31px;
+    min-height: 80vh;
+    height: auto;
+    }
+    }.right> img{
+        width: 90%;
+        height: 95%;
+    }
+    .main> .left > .leftMe > .uiux > button{
+    position: absolute;
+    top: 3vh;
+    margin-left: -32px;
+    background-color: aqua;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 14px;
+    }
+    .main> .left > .leftMe{
+        margin-top: 12vw;
+        padding-left: 10vw;
+        height: auto;
+        font-size: 6vw;
+        font-weight: bold;
+    }
+
+@media only screen and (max-width:960px) and (min-width:751px){
+    .main> .left > .leftMe > .uiux > button{
+        position: absolute;
+        top: 1vw;
+        margin-left: -32px;
+        background-color: aqua;
+        font-size: 20px;
+        border: none;
+        border-radius: 12px;
+        padding: 10px 14px;
+        }
+        .main{
+            width: 96%;
+            min-height: 50vh;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2vh;
+        }
+        .main> .left > .leftMe{
+            padding-left: 6vw;
+            height: auto;
+            font-size: 5vw;
+            font-weight: bold;
+        }
+        .main > .left{
+            display: flex;
+            flex-direction: column;
+            min-width: 30%;
+            max-width: 50%;
+            min-height: 90%;
+            height: auto;
+            width: auto;
+            }
+            .main > .right{
+            width: 50%;
+            padding-right: 31px;
+            height: 85%;
+            }
+            .main > .right > img{
+                width: 100%;
+                height: auto;
+            }
+            .main{
+                height: 55vh;
+            }
+            .left > .third > .hireMe> button{
+                margin-left: 12vw;
+                background-color: rgb(250, 141, 97);
+                border: none;
+                font-size: 15px;
+            }
+            .main > .left > .ideaMe{
+                margin-left: 6.2vw;
+            }
+            .left > .third > .hireMe> button{
+                margin-left: 8vw;
+            }
+}
