@@ -63,6 +63,7 @@ height: auto;
 width: 40%;
 padding-right: 31px;
 height: auto;
+max-height: 110vh;
 }
 .main > .right > img{
     border-radius: 40px;
@@ -135,6 +136,7 @@ font-weight: bold;
     margin: 20px auto 30px 50px;
 }
 .pages > .content{
+    font-size: larger;
     padding: 5px 50px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -165,51 +167,21 @@ font-weight: bold;
     width: 50px;
     height: 50px;
 }
-/* @media only screen and (max-width:1290px) and (min-width:1110px){
-    
-    .main > .left{
-    display: flex;
-    flex-direction: column;
-    min-width: 50%;
-    min-height: 90vh;
-    height: auto;
-    width: auto;
-    }
-    .main > .right{
-    width: 50%;
-    padding-right: 31px;
-    height: 90vh;
-    }
-    .main> .left > .leftMe > .uiux > button{
-    position: absolute;
-    top: 3vh;
-    margin-left: -32px;
-    background-color: aqua;
-    font-size: 20px;
-    border: none;
-    border-radius: 12px;
-    padding: 10px 14px;
-    }
-    .main> .left > .leftMe{
-        margin-top: 12vw;
-        padding-left: 10vw;
-        height: auto;
-        font-size: 6vw;
-        font-weight: bold;
-    }
-} */
+
 @media only screen and (max-width:1110px) and (min-width:960px){
     
+
+    .main{
+        max-height: 60vh;
+    }
     .main > .left{
     display: flex;
     flex-direction: column;
-    min-width: 40%;
-    min-height: 90vh;
+    min-width: 35%;
     height: auto;
-    width: auto;
     }
     .main > .right{
-    width: 60%;
+    width: 55%;
     padding-right: 31px;
     min-height: 80vh;
     height: auto;
@@ -249,10 +221,10 @@ font-weight: bold;
         }
         .main{
             width: 96%;
-            min-height: 50vh;
             justify-content: center;
             align-items: center;
             margin-top: 2vh;
+            height: 60vh;
         }
         .main> .left > .leftMe{
             padding-left: 6vw;
@@ -272,15 +244,13 @@ font-weight: bold;
             .main > .right{
             width: 50%;
             padding-right: 31px;
-            height: 85%;
+            height: 100%;
             }
             .main > .right > img{
                 width: 100%;
-                height: auto;
+                height: 100%;
             }
-            .main{
-                height: 55vh;
-            }
+            
             .left > .third > .hireMe> button{
                 margin-left: 12vw;
                 background-color: rgb(250, 141, 97);
