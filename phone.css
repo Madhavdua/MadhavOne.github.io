@@ -19,6 +19,12 @@ nav{
     flex-direction: column;
     /* position: absolute; */
 }
+.navitems{
+    display: none;   
+}
+#navItems{
+    padding: 0;
+}
 #menu{
     margin-top: auto;
     margin-bottom: auto;
@@ -45,14 +51,12 @@ transform: translateY(5px) rotate(-45deg);
 .opened #bar3{
 transform: translateY(-5px) rotate(45deg);
 }
-.navitems{
-    display: none;
-}
+
 .change{
     height: auto;
     position: relative;
     margin: 20px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     padding-right: auto;
     display: flex;
     flex-direction: column;
@@ -64,7 +68,10 @@ transform: translateY(-5px) rotate(45deg);
     margin: 5px;
     padding: 10px;
     border: 1px solid black;
-
+    min-width: 10vh;
+    max-width: 30vh;
+    margin-left: auto;
+    margin-right: auto;
     text-decoration: none;
     text-align: center;
 }
@@ -118,7 +125,7 @@ padding-left: 9%;
 .main> .left > .leftMe > .uiux > button{
    
     position: absolute;
-    top: 1vw;
+    top: 3vh;
     margin-left: -32px;
     background-color: aqua;
     font-size: 12px;
@@ -199,4 +206,16 @@ font-weight: bold;
     margin: 15px auto;
     width: 50px;
     height: 50px;
+}
+@media screen and (max-width:500px) {
+    .main> .left > .leftMe > .uiux > button{
+   
+        top: 1.8vh;
+        font-size: 10px;
+        border-radius: 12px;
+        padding: 0;
+        /* changing size of button */
+        width: 60px;
+        height: 25px;
+    }
 }
