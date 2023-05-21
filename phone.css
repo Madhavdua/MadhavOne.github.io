@@ -21,6 +21,7 @@ nav{
 }
 .navitems{
     display: none;   
+    background-color: black;
 }
 #navItems{
     padding: 0;
@@ -32,12 +33,17 @@ nav{
     flex-direction: column;
     align-items: center;
 }
+.bg-dark{
+    background-color: black;
+}
+.bg-light{
+    background-color: white;
+}
 .bar{
     margin: 1px 5px;
     border-radius: 2px;
     width: 15px;
     height: 3px;
-    background-color: black;
     transition: 1s ease;
 }
 
@@ -60,14 +66,13 @@ transform: translateY(-5px) rotate(45deg);
     padding-right: auto;
     display: flex;
     flex-direction: column;
-    transition: .5s ease;
+    transition: .2s ease;
     /* align-items: center; */
 
 }
 .change > p{
     margin: 5px;
     padding: 10px;
-    border: 1px solid black;
     min-width: 10vh;
     max-width: 30vh;
     margin-left: auto;
@@ -76,8 +81,12 @@ transform: translateY(-5px) rotate(45deg);
     text-align: center;
 }
 .change > p > a{
+    color: white;
     text-decoration: none;
 }
+
+
+
 
 /* Now main page start */
 .complete{

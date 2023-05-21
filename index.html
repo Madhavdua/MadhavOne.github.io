@@ -12,15 +12,15 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="nav">
         <div id="menu" onclick="burger()">
-        <div id="bar1" class="bar"></div>
-        <div id="bar2" class="bar"></div>
-        <div id="bar3" class="bar"></div>
+        <div id="bar1" class="bar bg-dark"></div>
+        <div id="bar2" class="bar bg-dark"></div>
+        <div id="bar3" class="bar bg-dark"></div>
         </div>
         <div id="ham" class="navName">
             <a>Madhav </a>
-            <p>&#8226;</p>
+            <p id="blue-circle">&#8226;</p>
         </div>
         <div id="navItems" class="navitems">
             <p><a href="#home">Home</a></p>
@@ -56,12 +56,12 @@
                     <button><a href="projects.html" target="blank">Hire Me</a></button>
                 </div>
                 <div class="projects">
-                    <a href="projects.html" target="blank">Projects &#8599</a>
+                    <a href="https://project-list-b880c.web.app/" target="blank">Projects &#8599</a>
                 </div>
             </div>
         </div>
         <div class="right">
-            <img src="profile.JPG" >
+            <img src="profile-museum.jpg" >
 
         </div>
     </div>
@@ -133,6 +133,14 @@
                     <img src="react crop.png">
                 </div>
             </div>
+            <div id="bootstrap" class="skillitems">
+                <div class="content skill">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="SkillsImg">
+                    <img src="bootstrap.png">
+                </div>
+            </div>
         </div>
     </div>
     <div id="contact" class="pages">
@@ -141,7 +149,7 @@
         </div>
         <div class="content">
             <div id="contactDivId"></div>
-            <label for="contactMe">How can i help you</label>
+            <label for="contactMe">Contact: </label>
             <select id="contactMeID" name="contactMename" onchange="item1(this.value)">
                 <option value="Select">Select </option>
                 <!-- options will be provided by javaScript -->
